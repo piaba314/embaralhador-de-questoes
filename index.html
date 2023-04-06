@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Embaralhador de Questões</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>Embaralhador de Questões</h1>
+
+      <div class="versao">
+        <h2>Original</h2>
+        <div id="entrada" contentEditable="true" class="questoes"></div>
+        <label for="numero-de-versoes">Número de versões: </label>
+        <input id="numero-de-versoes" name="numero-de-versoes" type="number" min="2" max="5" value="3">
+        <button id="btn-embaralhar">Embaralhar</button>
+      </div>
+
+      <div id="versoes"></div>
+    </div>
+
+    <script src="embaralhador.js"></script>
+    <script src="script.js"></script>
+    <script></script>
+  </body>
+</html>

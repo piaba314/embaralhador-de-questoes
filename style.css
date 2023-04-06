@@ -1,0 +1,27 @@
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
+.questoes {
+    border: 1px solid black;
+    width: 80%;
+    height: 50vh;
+    padding: 15px;
+    margin: 15px;
+    overflow-y: scroll;
+    resize: both;
+}
+
+.numero {
+    font-weight: 700;
+}
+
+.gabarito {
+    width: 80%;
+    margin: 15px;
+    resize: none;
+    padding: 15px;
+}
