@@ -159,9 +159,16 @@ function centralizaString(str, l){
 }
 
 function renderizaGabarito(gabarito, alvo){
+  let rotulo = document.createElement("label");
+  alvo.appendChild(rotulo);
+  rotulo.setAttribute("for", "gabarito");
+  rotulo.innerText = "Gabarito: ";
+  alvo.innerHTML += "<br>";
+  
   let gabaritoContainer = criaContainer("textarea", "gabarito", alvo);
   gabaritoContainer.setAttribute("readonly", "true");
   gabaritoContainer.setAttribute("rows", 5);
   gabaritoContainer.setAttribute("wrap", "off");
+  gabaritoContainer.setAttribute("name", "gabarito");
   gabaritoContainer.value = gabaritoParaString(gabarito);
 }
