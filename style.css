@@ -1,6 +1,7 @@
 html, body {
   overflow-x: hidden;
   font-size: 1.1em;
+  font-family: ubuntu, sans-serif;
 }
 
 body {
